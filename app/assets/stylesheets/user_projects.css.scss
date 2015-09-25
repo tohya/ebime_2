@@ -1,0 +1,36 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#user-projects {
+  
+  height: 100%;
+  width:  100%;
+  padding: 20px;
+
+  .user {
+    height: 100%;
+    background-color: #AABFfA;
+    padding: 20px;
+  }
+  .project {
+    height: 100%;
+    //background-color: #783589;
+    .assign {
+      height: 50%;
+      background-color: #FBAAfA;
+      padding: 20px;
+    }
+    .yet {
+      height: 50%;
+      background-color: #FBAA88;
+      padding: 20px;
+    }
+    form {
+      margin: 2px;
+      float: left;
+    }
+  }
+  
+}

@@ -1,0 +1,31 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#projects {
+  
+  height: 100%;
+  width:  100%;
+  padding: 20px;
+  
+  .index {
+    height: 50%;
+    background-color: #AABFfA;
+    padding: 20px;
+  }
+  .edit {
+    height: 50%;
+    padding: 20px;
+    background-color: #FBAAfA;
+  }
+  .create {
+    height: 50%;
+    padding: 20px;
+    background-color: #FBAA88;
+  }
+  form {
+    margin: 2px;
+    float: left;
+  }  
+}

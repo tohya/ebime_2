@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+  <div class="row">
+    <%= render 'layouts/header' %>
+  </div><!-- row -->
+  <div class="row">
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
+  </div><!-- row -->
+  <div class="row" id="main">
+    <%= render 'layouts/main' %>
+  </div><!-- row -->
+  <div class="row">
+    <%= debug(params) if Rails.env.development? %>
+  </div><!-- row -->
+</body>
+</html>
